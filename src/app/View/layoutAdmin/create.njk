@@ -1,0 +1,57 @@
+{% extends './layout.njk'%}
+
+
+{%block main%}
+
+
+
+<div class="max-width">
+    <div class="create_recipe">
+        <h2>Criando receita</h2>
+        <button>Salvar receita</button>
+    </div>
+
+    <div class="picture_recipe_upload"></div>
+
+
+    <div class="ingredients_recipe">
+        <h4>Ingredientes</h4>
+        <div class="all_ingredients">
+            <div class="ingredient">
+                <input type="text" name="ingredients[]" value="dasdasdasda" placeholder="Ingredient" />
+            </div>
+        </div>
+        <button>Adicionar novo ingrediente</button>
+    </div>
+
+    <div class="preparation_recipe">
+        <h4>Modo de preparo</h4>
+        <div class="all_prepare">
+            <div class="preparation">
+                <input type="text" name="preparation[]" id="preparation">
+            </div>
+        </div>
+        <button class="add_prepare">Adicionar novo passo</button>
+    </div>
+
+
+
+
+
+    <div class="additional_info">
+        <h4>Adicionais adicionais</h4>
+        <textarea name="" id="" cols="30" rows="10"></textarea>
+    </div>
+
+
+</div>
+
+{%block script%}
+
+
+<script src="/js/script-admin.js"></script>
+
+{%endblock%}
+
+
+{%endblock%}

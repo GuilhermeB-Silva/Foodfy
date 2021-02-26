@@ -1,0 +1,39 @@
+{% extends "./layout.njk"%}
+
+{% include './parts/header.njk'%}
+
+
+{% block main%}
+
+<section class="recipes-section max-width padding-space">
+    <h2>Gerenciar receitas</h2>
+
+    <div class="recipes-cards">
+
+        <div class="recipe-card">
+            <img src="/img/doce.png" alt="">
+            <div class="recipe-info">
+                <span>Recipe Name</span>
+                <span>Recipe by</span>
+                <a href="">Visualizar</a>
+            </div>
+
+        </div>
+
+        <div class="recipe-card">
+            <img src="/img/doce.png" alt="">
+            <div class="recipe-info">
+                <span>Recipe Name</span>
+                <span>Recipe by</span>
+                <a href="">Visualizar</a>
+            </div>
+
+        </div>
+      
+
+    </div>
+
+</section>
+
+
+{% endblock%}

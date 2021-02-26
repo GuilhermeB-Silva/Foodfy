@@ -1,0 +1,190 @@
+*{
+    padding:0;
+    margin:0;
+    border:0;
+    box-sizing:border-box;
+    font-family: 'Roboto', sans-serif;
+    font-size:62.5%
+}
+
+:root{
+    --white:#fff
+}
+
+
+
+
+
+html,body{
+    height:100%
+}
+
+body{
+    display:flex;
+    flex-direction:column;
+    width:100%;
+}
+
+/* CENTRALIZAR E MAXIMO TAMANHO; PADDING 50PX */
+
+.max-width{
+    width:100%;
+    max-width:940px;
+    margin: 0 auto;
+}
+
+.padding-space{
+    padding:50px 0 50px
+}
+
+.no_display{
+    display:none;
+}
+
+
+
+/* CENTRALIZAR E MAXIMO TAMANHO */
+
+
+.a-ad{
+    width:100%;
+    background:black;
+    padding:27px 0
+
+}
+
+header div:first-child{
+    display:flex;
+    align-items:center;
+}
+
+header img{
+    margin-right:123px
+}
+
+.header_links a{
+    font-size:1.6rem;
+    margin-right:30px;
+    text-decoration:none;
+    color:black
+}
+
+.recipes-section h2{
+    font-size: 2.4rem;
+    color: #111111;
+}
+
+.recipes-cards{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top:30px;
+    grid-gap:20px
+}
+
+.recipe-card{
+    width:476px;
+    height:80px;
+    display:grid;
+    grid-template-columns: 172px 1fr;
+    grid-gap:20px;
+}
+
+.recipe-card img{
+    width:172px;
+    height:100%;
+    border-radius: 8.57px;
+}
+
+
+.recipe-info span:first-child{
+    font-size:1.8rem;
+    color: #111111;
+    display:block;
+    margin-bottom:5px;
+}
+
+.recipe-info span:nth-child(2){
+    font-size: 1.4rem;
+    color: #777777;
+    display:block;
+    margin-bottom:10px;
+
+}
+
+.recipe-info a{
+    font-size: 1.4rem;
+    color: #6558C3;
+    font-weight:bold;
+    text-decoration:none;
+}
+
+.create_recipe{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    margin-top:55px;
+    margin-bottom:30px
+
+}
+
+.create_recipe h2{
+    font-size:2.4rem;
+    display:inline-block
+}   
+
+
+
+
+
+.create_recipe button{
+    font-size:1.6rem;
+    width:136px;
+    height:37px;
+    border-radius:4px;
+    background:#6558C3;
+    color:var(--white);
+    font-weight:bold
+}
+
+.ingredients_recipe h4,
+.preparation_recipe h4,
+.additional_info h4{
+
+font-size:1.6rem
+} 
+
+
+
+
+
+
+.ingredients_recipe input,
+.preparation_recipe input,
+.additional_info textarea{
+    width:100%;
+    border:1px solid #DDDDDD;
+    border-radius:4px;
+    margin:10px 0 15px
+
+}
+
+.ingredients_recipe input,
+.preparation_recipe input{
+    height:49px;
+}
+
+.additional_info textarea{
+    height:257px
+}
+
+.ingredients_recipe button,
+.preparation_recipe button{
+    font-size:1.6rem;
+    font-weight:bold;
+    color:#6558C3;
+    background:transparent;
+    cursor:pointer;
+    margin-bottom:30px
+
+
+}
