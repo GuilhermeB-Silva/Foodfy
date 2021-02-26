@@ -13,10 +13,10 @@ routes.get("/about",(req,res)=>{
 
 
 routes.get("/recipes",(req,res)=>{
-    return res.render("layoutRegular/recipe")
+    return res.render("layoutRegular/recipes")
 })
 
-routes.get("/recipe/detailed-recipe",(req,res)=>{
+routes.get("/recipes/id",(req,res)=>{
     return res.render("layoutRegular/detailed-recipe")
 })
 

@@ -34,7 +34,7 @@ body{
 }
 
 .padding-space{
-    padding:50px 0 50px
+    padding:55px 0 50px
 }
 
 .no_display{
@@ -45,12 +45,10 @@ body{
 
 /* CENTRALIZAR E MAXIMO TAMANHO */
 
-
-.a-ad{
+.container-header{
     width:100%;
     background:black;
     padding:27px 0
-
 }
 
 header div:first-child{
@@ -122,7 +120,6 @@ header img{
     display:flex;
     align-items:center;
     justify-content:space-between;
-    margin-top:55px;
     margin-bottom:30px
 
 }
@@ -131,10 +128,6 @@ header img{
     font-size:2.4rem;
     display:inline-block
 }   
-
-
-
-
 
 .create_recipe button{
     font-size:1.6rem;
@@ -153,18 +146,15 @@ header img{
 font-size:1.6rem
 } 
 
-
-
-
-
-
 .ingredients_recipe input,
 .preparation_recipe input,
 .additional_info textarea{
     width:100%;
     border:1px solid #DDDDDD;
     border-radius:4px;
-    margin:10px 0 15px
+    margin:10px 0 15px;
+    padding:15px 20px;
+    font-size:1.6rem
 
 }
 
@@ -185,6 +175,103 @@ font-size:1.6rem
     background:transparent;
     cursor:pointer;
     margin-bottom:30px
-
-
 }
+
+div.banner-recipe .title-and-button-recipe{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom: 24px
+}
+
+div.banner-recipe > div button{
+    background: #6558C3;
+    border-radius: 4px;
+    color:#fff;
+    font-size:1.6rem;
+    padding:9px  20px;
+    font-weight:bold
+}
+
+.banner-recipe img{
+    display:block;
+    height:280px;
+    object-fit:cover;
+    border-radius:15px
+}
+
+.banner-recipe h2{
+    text-align:center;
+    margin-top:50px;
+    font-size:3.6rem;
+    line-height:4.2rem;
+    color: #111111;
+}
+
+.banner-recipe h4{
+    text-align:center;
+    font-size:2rem;
+    color: #777777;
+    font-weight:lighter;
+    line-height:2.4rem;
+    margin-bottom:50px
+}
+
+div.banner-recipe h6{
+    font-size:2.4rem;
+    color:#111111
+}
+
+.banner-recipe ul{
+    padding:20px 0 39px;
+    list-style-position: inside
+}
+
+.banner-recipe ul li{
+    font-size: 1.8rem;
+    color: #444444;
+    line-height:2.8rem;
+    list-style:none;
+}
+
+.banner-recipe textarea{
+    width:100%;
+    height:200px;
+    font-size:1.8rem;
+    display:block;
+    margin:20px 0;
+    resize:none
+}    
+
+div.edit-buttons{
+    display:flex;
+    align-items:center;
+    justify-content:space-between
+}
+
+div.edit-buttons h6{
+    font-size:2.4rem;
+    color:#111111
+}
+
+div.edit-buttons{
+    margin-bottom:30px
+}
+
+div.edit-buttons button{
+    font-size:1.6rem;
+    font-weight:bold;
+    color:#ffffff;
+    padding:9px 20px;
+    border-radius: 4px;
+}
+
+div.edit-buttons button.delete-button{
+    background: #DC4747;
+    margin-right:10px
+}
+
+div.edit-buttons button.save-button{
+    background: #6558C3;
+}
+

@@ -5,5 +5,11 @@ module.exports = {
     },
     create(req,res){
         return res.render("layoutAdmin/create")
+    },
+    show(req,res){
+        return res.render("layoutAdmin/detailed-recipe")
+    },
+    edit(req,res){
+        return res.render("layoutAdmin/edit")
     }
 }
