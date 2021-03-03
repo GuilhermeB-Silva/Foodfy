@@ -1,11 +1,26 @@
-if(window.location.pathname == '/sobre'){
-    document.querySelector(".header_links a:nth-child(1)").style.fontWeight = 'bold'
-}
+const path = window.location.pathname.replace(/.*\//,'')
+console.log(path)
 
-if(window.location.pathname == '/receitas'){
-    document.querySelector(".header_links a:nth-child(2)").style.fontWeight = 'bold'
-}
+document.querySelectorAll(".header_links a").forEach(tag =>{
+    console.log(tag)
+    const link = tag.href.replace(/.*\//,'')
 
+    if(link === path){
+        tag.style.fontWeight = 'bold'
+    }
+
+
+})
+
+
+
+// if(window.location.pathname == '/about'){
+//     document.querySelector(".header_links a:nth-child(1)").style.fontWeight = 'bold'
+// }
+
+// if(window.location.pathname == '/recipes'){
+//     document.querySelector(".header_links a:nth-child(2)").style.fontWeight = 'bold'
+// }
 
 
 if(window.location.pathname == '/recipe/detailed-recipe'){
