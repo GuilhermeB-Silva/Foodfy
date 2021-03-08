@@ -1,9 +1,10 @@
 const express = require("express")
-const Recipes = require("../app/Controller/recipesController")
-
-
 const routes = express.Router()
 
+const Recipes = require("../../app/Controller/recipesController")
+
+
+// nao tem roda /admin
 routes.get("/admin/recipes", Recipes.index); // Mostrar a lista de receitas
 routes.get("/admin/recipes/create",Recipes.create); // Mostrar formulário de nova receita
 routes.get("/admin/recipes/id",Recipes.show ); // Exibir detalhes de uma receita

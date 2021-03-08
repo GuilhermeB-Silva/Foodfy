@@ -7,13 +7,13 @@
         <a href="/recipes">Receitas</a>
         <a href="/chefs">Chefs</a>
     </div>
-
-    {% if not user %}
-        <div class="header-search">
-            <form action="">
-                <input type="text" placeholder="Buscar uma receita" name="g">
-                <button>Buscar</button>
-            </form>
-        </div>
+    
+    {% if recipes%}
+    <div class="header-search">
+        <form action="">
+            <input type="text" placeholder="Buscar uma receita" name="g">
+            <button>Buscar</button>
+        </form>
+    </div>
     {%endif%}
 </header>

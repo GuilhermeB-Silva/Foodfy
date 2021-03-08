@@ -75,6 +75,12 @@ header img{
     color: #111111;
 }
 
+.chef-manager-container h2{
+    margin-bottom:30px;
+    font-size: 2.4rem;
+    color: #111111;
+}
+
 .recipes-cards{
     display:grid;
     grid-template-columns: 1fr 1fr;
@@ -119,7 +125,7 @@ header img{
     text-decoration:none;
 }
 
-.create_recipe{
+.create_recipe,.create_chef{
     display:flex;
     align-items:center;
     justify-content:space-between;
@@ -127,12 +133,45 @@ header img{
 
 }
 
-.create_recipe h2{
+.create_recipe h2,.create_chef h2{
     font-size:2.4rem;
     display:inline-block
 }   
 
-.create_recipe button{
+.chef-info{
+    display:flex;
+    flex-direction:column;
+    margin:50px auto 0;
+    align-items:center;
+    height:300px;
+    width:200px;
+}
+.chef-info img{
+    width:200px;
+    height:200px;
+    border-radius:50%;
+    border:1px solid black
+}
+
+.chef-info h2{
+    font-size:3.4rem;
+    color: #111111;
+    margin:30px 0 4px
+}
+
+.chef-info span{
+    font-size:2rem;
+    color: #777777;
+}
+
+.chef-recipes h2{
+    font-size: 2.4rem;
+    color: #111111;
+    margin:50px 0 30px
+}
+
+
+.create_recipe button,.create_chef button{
     font-size:1.6rem;
     width:136px;
     height:37px;
@@ -144,25 +183,30 @@ header img{
 
 .ingredients_recipe h4,
 .preparation_recipe h4,
-.additional_info h4{
-
-font-size:1.6rem
+.additional_info h4,
+.chef-name-container h4,
+.chef-avatar-container h4{
+    font-size:1.6rem
 } 
 
 .ingredients_recipe input,
 .preparation_recipe input,
-.additional_info textarea{
+.additional_info textarea,
+.choose_chef select,
+.chef-name input,
+.chef-avatar input{
     width:100%;
     border:1px solid #DDDDDD;
     border-radius:4px;
     margin:10px 0 15px;
     padding:15px 20px;
     font-size:1.6rem
-
 }
 
 .ingredients_recipe input,
-.preparation_recipe input{
+.preparation_recipe input,
+.chef-name input,
+.chef-avatar input{
     height:49px;
 }
 
@@ -255,7 +299,7 @@ div.edit-buttons{
     justify-content:space-between
 }
 
-div.edit-buttons h6{
+div.edit-buttons h2{
     font-size:2.4rem;
     color:#111111
 }
@@ -281,3 +325,42 @@ div.edit-buttons button.save-button{
     background: #6558C3;
 }
 
+.chefs-card{
+    display:grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 30px
+}
+
+.chef-card{
+    display:flex;
+}
+
+.chef-card img{
+    width:6.4rem;
+    height:6.4rem;
+    border-radius:50%
+}
+
+.chef-data {
+display:flex;
+flex-direction:column;
+margin-left:2rem;
+justify-content:center
+}
+
+.chef-data a{
+    font-weight:bold;
+    font-size: 1.4rem;
+    color: #6558C3;
+    text-decoration:none;
+    margin-top:10px
+}
+
+.chef-data span:first-child{
+    font-size:1.8rem;
+}
+
+.chef-data span:last-child{
+    font-size:1.4rem;
+    color: #666666;
+}

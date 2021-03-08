@@ -1,0 +1,26 @@
+{% extends '../layout.njk'%}
+
+{% block main%}
+
+
+<div class="">
+
+    <div class="edit-buttons">
+        <h2>Editando receita</h2>
+        <div>
+            <button class="delete-button">Deletar</button>
+            <button class="save-button">Salvar chef</button>
+        </div>
+    </div>
+
+    {%include './fields-chef.njk'%}
+</div>
+
+
+{%block script%}
+
+    <script src="/js/script-admin.js"></script>
+
+{%endblock%}
+
+{% endblock%}

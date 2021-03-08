@@ -1,8 +1,9 @@
 const { static } = require("express")
 const express = require("express")
 const nunjucks = require("nunjucks")
-const adminRoutes = require("./routes/adminRoutes")
-const regularRoutes = require("./routes/regularRoutes")
+const recipesRoutes = require("./routes/adminRoutes/recipes")
+const usersRoutes = require("./routes/adminRoutes/users")
+const regularRoutes = require("./routes/regularRoutes/regularRoutes")
 
 
 const server = express()
@@ -10,7 +11,9 @@ const server = express()
 server.set('view engine','njk')
 
 server.use(express.static("public"))
-server.use(adminRoutes)
+server.use(recipesRoutes)
+server.use(usersRoutes)
+
 server.use(regularRoutes)
 
 
